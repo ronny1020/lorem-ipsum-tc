@@ -10,7 +10,8 @@ const loremIpsumTC = {
 
   createLine: function (
     withLoren = true,
-    numOfChar = Math.floor(Math.random() * 20) + 1
+    numOfChar = Math.floor(Math.random() * 20) + 2,
+    charList = tcCharacterList
   ) {
     let lineOfChar = ''
     for (let i = 0; i < numOfChar; i++) {
@@ -21,12 +22,18 @@ const loremIpsumTC = {
 
   createParagraph: function (
     withLoren = true,
-    numOfLine = Math.floor(Math.random() * 5) + 1
+    numOfLine = Math.floor(Math.random() * 5) + 2,
+    charList = tcCharacterList
   ) {
     let paragraph = ''
-
-    return withLoren ? '羅倫' + lineOfChar : lineOfChar
+    for (let i = 0; i < numOfLine - 1; i++) {
+      paragraph += this.createLine(false) + '，'
+    }
+    paragraph += this.createLine(false) + '。'
+    return withLoren ? '羅倫' + paragraph : paragraph
   },
 }
+
+console.log(loremIpsumTC.createParagraph(false))
 
 module.exports = loremIpsumTC
