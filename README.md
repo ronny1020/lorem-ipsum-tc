@@ -7,7 +7,7 @@ Creating Traditional Chinese lorem ipsum.
 ## example
 
 ```javascript
-const loremIpsumTC = require('lorem-ipsum-tc'
+const loremIpsumTC = require('lorem-ipsum-tc')
 
 loremIpsumTC.createChar(charList)
 loremIpsumTC.createLine(withLoren, numOfChar, charList)
