@@ -9,9 +9,14 @@ Creating Traditional Chinese lorem ipsum.
 ```javascript
 const loremIpsumTC = require('lorem-ipsum-tc')
 
-loremIpsumTC.createChar(charList)
-loremIpsumTC.createLine(withLoren, numOfChar, charList)
-loremIpsumTC.createParagraph(withLoren, numOfLine, charList)
+loremIpsumTC.createChar()
+// Create a random character.
+
+loremIpsumTC.createLine()
+// Create a random line.
+
+loremIpsumTC.createParagraph()
+// Create a random paragraph.
 ```
 
 ## Installation
@@ -38,12 +43,12 @@ loremIpsumTC.createParagraph(withLoren, numOfLine, charList)
   If withLoren is true, line or paragraph would start with "羅倫" which means lorem in Chinese.
   The default is true.
 
-- numOfChar
+- numOfChar: number
 
-  The number of characters would be created.("羅倫" is NOT counted.)
+  The number of characters would be created.(ps. "羅倫" is NOT counted.)
   The default is random from 2 to 21.
 
-- numOfLine
+- numOfLine: number
 
   The number of lines would be created.
   The default is random from 2 to 6.
