@@ -15,7 +15,7 @@ const loremIpsumTC = {
   ) {
     let lineOfChar = ''
     for (let i = 0; i < numOfChar; i++) {
-      lineOfChar += this.createChar()
+      lineOfChar += this.createChar(charList)
     }
     return withLoren ? '羅倫' + lineOfChar : lineOfChar
   },
@@ -27,9 +27,9 @@ const loremIpsumTC = {
   ) {
     let paragraph = ''
     for (let i = 0; i < numOfLine - 1; i++) {
-      paragraph += this.createLine(false) + '，'
+      paragraph += this.createLine(false, undefined, charList) + '，'
     }
-    paragraph += this.createLine(false) + '。'
+    paragraph += this.createLine(false, undefined, charList) + '。'
     return withLoren ? '羅倫' + paragraph : paragraph
   },
 }
