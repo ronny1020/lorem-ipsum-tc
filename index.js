@@ -34,6 +34,4 @@ const loremIpsumTC = {
   },
 }
 
-console.log(loremIpsumTC.createParagraph(false))
-
 module.exports = loremIpsumTC
