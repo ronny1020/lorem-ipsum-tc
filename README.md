@@ -4,7 +4,6 @@ Creating creating Traditional Chinese lorem ipsum.
 
 繁體中文測試文本生成工具
 
----
 
 ## example
 
@@ -16,7 +15,6 @@ loremIpsumTC.createLine(withLoren, numOfChar, charList)
 loremIpsumTC.createParagraph(withLoren, numOfLine, charList)
 ```
 
----
 
 ## option
 
