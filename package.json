@@ -7,5 +7,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ronny Hsieh",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronny1020/lorem-ipsum-tc.git"
+  },
+  "keywords": [
+    "lorem-ipsum-tc",
+    "lorem-ipsum",
+    "chinese",
+    "Traditional Chinese",
+    "lorem"
+  ],
+  "bugs": {
+    "url": "https://github.com/ronny1020/lorem-ipsum-tc/issues"
+  },
+  "homepage": "https://github.com/ronny1020/lorem-ipsum-tc#readme"
 }
