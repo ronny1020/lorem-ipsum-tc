@@ -17,6 +17,9 @@ loremIpsumTC.createLine()
 
 loremIpsumTC.createParagraph()
 // Create a random paragraph.
+
+loremIpsumTC.createArticle()
+// Create a random article.
 ```
 
 ## Installation
@@ -31,6 +34,13 @@ npm i lorem-ipsum-tc
 loremIpsumTC.createChar(charList)
 loremIpsumTC.createLine(withLoren, numOfChar, charList)
 loremIpsumTC.createParagraph(withLoren, numOfLine, charList)
+loremIpsumTC.createArticle(
+  withLoren,
+  numOfParagraph,
+  indent,
+  skippingLine,
+  charList
+)
 ```
 
 - charList: string
@@ -51,7 +61,22 @@ loremIpsumTC.createParagraph(withLoren, numOfLine, charList)
 - numOfLine: number
 
   The number of lines would be created.
-  The default is random from 2 to 6.
+  The default is random from 3 to 7.
+
+- numOfParagraph: number
+
+  The number of paragraphs would be created.
+  The default is random from 3 to 7.
+
+- indent: string
+
+  The indent of each paragraph.
+  The default is 4 spaces.
+
+- skippingLine: string
+
+  The skipping line between paragraphs.
+  The default is '\n'.
 
 ## Contributing
 
