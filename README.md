@@ -9,17 +9,21 @@ Creating Traditional Chinese lorem ipsum.
 ```javascript
 const loremIpsumTC = require('lorem-ipsum-tc')
 
-loremIpsumTC.createChar()
-// Create a random character.
+let char = loremIpsumTC.createChar()
+console.log(char)
+// return a random character string.
 
-loremIpsumTC.createLine()
-// Create a random line.
+let line = loremIpsumTC.createLine()
+console.log(line)
+// return a random line string.
 
-loremIpsumTC.createParagraph()
-// Create a random paragraph.
+let paragraph = loremIpsumTC.createParagraph()
+console.log(paragraph)
+// return a random paragraph string.
 
-loremIpsumTC.createArticle()
-// Create a random article.
+let article = loremIpsumTC.createArticle()
+console.log(article)
+// return a random article string.
 ```
 
 ## Installation
