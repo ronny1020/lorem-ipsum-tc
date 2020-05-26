@@ -1,6 +1,6 @@
 {
   "name": "lorem-ipsum-tc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Tool for creating Traditional Chinese lorem ipsum",
   "main": "index.js",
   "scripts": {
